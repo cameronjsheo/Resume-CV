@@ -1,0 +1,1285 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+section
+{
+	padding: 100px;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.banner
+{
+	position: relative;
+	min-height: 100vh;
+	background: url(4.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner h2
+{
+	font-size: 3em;
+	color: white;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+
+.banner h2 span
+{
+		font-size: 1.5em;
+		font-weight: 700;
+}
+
+.banner h3
+{
+	font-size: 1.5em;
+	color: white;
+	font-weight: 500;
+}
+
+.btnGit
+{
+	position: relative;
+	background: #0C090A;
+	display: inline-block;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+
+
+.btnHost
+{
+	position: relative;
+	background: #0C090A;
+	display: inline-block;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+
+header
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+	background: linear-gradient(to right, grey, black, black);
+}
+
+
+header .logo
+{
+	color: white;
+	font-size: 34px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+header ul
+{
+	position: relative;
+	display: flex;
+}
+
+header ul li
+{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a
+{
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	font-size: 18px;
+	color: white;
+	text-decoration: none;
+}
+
+.heading
+{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: Black;
+}
+
+.heading h2
+{
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.content
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.contentBx
+{
+	padding-right: 30px;
+	font-size: 18px;
+}
+
+.contentBx h3
+{
+	font-size: 24px;
+	margin-bottom: 10px;
+	
+}
+
+.w50
+{
+	min-width: 50%;
+	margin-left: 50px;
+}
+
+.img
+{
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.Work 
+{
+	background: white;
+}
+
+.Work .heading
+{
+	color: black;
+}
+
+.Work .content
+{
+	color: black;
+}
+
+.Work .content p
+{
+	margin-left: 50px;
+	margin-right: 100px;
+	font-size: 18px;
+}
+
+.Education
+{
+	background: black;
+}
+
+.Education .heading
+{
+	color: white;
+}
+
+.help
+{
+	display: flex;
+	justify-content: center;
+	min-height: 65vh;
+}
+
+.container
+{
+	width: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	bottom: 20%;
+}
+
+.container .card
+{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: #0c002b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	box-shadow: 0px 20px 50px rgba(0,0,0,0.2);
+	overflow: hidden;
+}
+
+.container .card::before
+{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width: 50%;
+	background: rgba(240, 12, 12, 0.1);
+	pointer-events: none;
+}
+
+.container .card .content1
+{
+	padding: 30px;
+	text-align: center;
+}
+
+.container .card .content1 h2
+{
+	position: absolute;
+	right: 30px;
+	font-size: 3em;
+	font-weight: 800;
+	color: #1779ff;
+	z-index: 1;
+	opacity: 0.1;
+	transition: 0.5s;
+}
+
+.container .card:hover .content1 h2
+{
+	opacity: 1;
+	transform: translateY(-70px);
+}
+
+.container .card .content1 h3
+{
+	position: relative;
+	font-size: 1.5em;
+	color: #fff;
+	z-index: 2;
+	opacity: 0.5;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+.container .card .content1 p
+{
+	position: relative;
+	font-size: 1em;
+	color: #fff;
+	z-index: 2;
+	opacity: 0.5;
+	font-weight: 300;
+	transition: 0.5s;
+}
+
+.container .card:hover .content1 h3,
+.container .card:hover .content1 p
+{
+	opacity: 1;
+}
+
+.container .card .content1 a
+{
+	display: inline-block;
+	margin-top: 15px;
+	padding: 8px 15px;
+	background: white;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.container .card span
+{
+	transition: 0.5s;
+}
+
+.container .card  span:nth-child(1)
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to right, transparent, #1779ff);
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1
+{
+	0%
+	{
+		transform: translateX(-100%);
+	}
+	100%
+	{
+		transform: translateX(100%);
+	}
+}
+
+.container .card  span:nth-child(2)
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 3px;
+	height: 100%;
+	background: linear-gradient(to bottom, transparent, #1779ff);
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate2
+{
+	0%
+	{
+		transform: translateY(-100%);
+	}
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
+
+.container .card  span:nth-child(3)
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(to left, transparent, #1779ff);
+	animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3
+{
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+
+.container .card  span:nth-child(4)
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3px;
+	height: 100%;
+	background: linear-gradient(to top, transparent, #1779ff);
+	animation: animate4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate4
+{
+	0%
+	{
+		transform: translateY(100%);
+	}
+	100%
+	{
+		transform: translateY(-100%);
+	}
+}
+
+.container .card span
+{
+	transition: 0.5s;
+	opacity: 0;
+}
+.container .card:hover span
+{
+	opacity: 1;
+}
+
+.tech
+{
+	background: black;
+}
+
+.tech .heading
+{
+	color: white;
+}
+
+.help2
+{
+	display: flex;
+	justify-content: center;
+	min-height: 10vh;
+}
+
+svg
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	z-index: -1;
+
+}
+
+svg circle
+{
+	width: 100%;
+	height: 100%;
+	fill: none;
+	stroke: #191919;
+	stroke-width: 10;
+	stroke-linecap: round;
+	transform: translate(5px, 5px);
+	z-index: -1;
+}
+
+svg circle:nth-child(2)
+{
+	stroke-dasharray: 440;
+	stroke-dashoffset: 440;
+}
+
+.card2:nth-child(1) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 60)/100);
+	stroke: #00ff43;
+}
+
+.card2:nth-child(2) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 60)/100);
+	stroke: #00a1ff;
+}
+
+.card2:nth-child(3) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 90)/100);
+	stroke: #c6f811;
+}
+
+.container5
+{
+	position: relative;
+	width: 900px;
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.container5 .card2
+{
+	position: relative;
+	width: 250px;
+	background: linear-gradient(0deg, red, black, black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	border-radius: 4px;
+	text-align: center;
+	overflow: hidden;
+	transition: 0.5s;
+	margin-bottom: 15px;
+	transform: translateY(0px);
+}
+
+.container5 .card2:hover
+{
+	transform: translateY(-10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+.container5 .card2:before
+{
+	
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.03);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.percent2
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 50px #000;
+	background: #222;
+	z-index: 1001;
+}
+
+.percent2 .number
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.percent2 .number h2
+{
+	color: #777;
+	font-weight: 700;
+	font-size: 40px;
+	transition: 0.5s;	
+}
+
+.card2:hover .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.percent2 .number h2 span
+{
+	font-size: 24px;
+	color: #777;
+	transition: 0.5s;
+}
+
+.card2:hover .percent2 .number h2 span
+{
+	color: white;
+}
+
+.text
+{
+	position: relative;
+	color: #777;
+	font-weight: 700;
+	font-size: 18px;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+.card2:hover .text
+{
+	color: white;
+}
+
+.card3:nth-child(1) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 75)/100);
+	stroke: #00ff43;
+}
+
+.card3:nth-child(2) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 65)/100);
+	stroke: #00a1ff;
+}
+
+.card3:nth-child(3) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 55)/100);
+	stroke: #c6f811;
+}
+
+.container5 .card3
+{
+	position: relative;
+	width: 250px;
+	background: linear-gradient(0deg, red, black, black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	border-radius: 4px;
+	text-align: center;
+	overflow: hidden;
+	transition: 0.5s;
+	margin-bottom: 15px;
+	transform: translateY(0px);
+}
+
+.container5 .card3:hover
+{
+	transform: translateY(-10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+.container5 .card3:before
+{
+	content : "";
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.03);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.card3:hover .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.card3:hover .percent2 .number h2 span
+{
+	color: white;
+}
+
+.card3:hover .text
+{
+	color: white;
+}
+
+.card4:nth-child(1) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 70)/100);
+	stroke: #00ff43;
+}
+
+.card4:nth-child(2) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 85)/100);
+	stroke: #00a1ff;
+}
+
+.card4:nth-child(3) svg circle:nth-child(2)
+{
+	stroke-dashoffset: calc(440 - (440 * 50)/100);
+	stroke: #c6f811;
+}
+
+
+.container5 .card4
+{
+	position: relative;
+	width: 250px;
+	background: linear-gradient(0deg, red, black, black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	border-radius: 4px;
+	text-align: center;
+	overflow: hidden;
+	transition: 0.5s;
+	margin-bottom: 15px;
+	transform: translateY(0px);
+}
+
+.container5 .card4:hover
+{
+	transform: translateY(-10px);
+	box-shadow: 0 15px 35px rgba(0,0,0,.5);
+}
+
+.container5 .card4:before
+{
+	content : "";
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.03);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.card4:hover .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.card4:hover .percent2 .number h2 span
+{
+	color: white;
+}
+
+.card4:hover .text
+{
+	color: white;
+}
+
+.content3 p
+{
+	font-size: 18px;
+}
+
+@media (max-width: 991px)
+{
+	.container5{
+		display: block;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	header
+	{
+		padding: 20px 50px;
+	}
+	
+	.menu
+	{
+		position: fixed;
+        top: 75px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: white;
+		transition: 0.5s;
+		border-top: 1px solid black;
+	}
+	
+	.menu.active
+	{
+		left: 0;
+	}
+	
+	header ul li a
+	{
+		color: #111;
+		font-size:30px;
+		margin: 10px;
+	}
+	
+	.toggle
+	{
+		width: 40px;
+		height: 40px;
+		background: url(menu.png) ;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	
+	.toggle.active
+	{
+		background: url(close.png) ;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	
+	.section
+	{
+		padding: 100px 50px;
+	}
+	
+	.banner
+	{
+		padding: 150px 50px 100px;
+	}
+	
+	.banner h2
+	{
+		font-size: 2em;
+	}
+	
+	.banner h3
+	{
+		font-size: 1.5em;
+	}
+	
+	.about .content .contentBx p
+	{
+		
+		left: 20px;
+	}
+	
+	.btnGit
+	{
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+	
+	.btnHost
+	{
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+	
+	.content
+	{
+		flex-direction: column;
+	}
+	
+	.w50
+	{
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.container .card .content1 h3,
+    .container .card .content1 p
+{
+	opacity: 1;
+}
+
+.container .card .content1 h2
+{
+	opacity: 1;
+	transform: translateY(-70px);
+}
+
+.container .card span
+{
+	opacity: 1;
+}
+
+.card2 .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.card2 .percent2 .number h2 span
+{
+	color: white;
+}
+	
+.card2 .text
+{
+	color: white;
+}	
+
+.card3 .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.card3 .percent2 .number h2 span
+{
+	color: white;
+}
+	
+.card3 .text
+{
+	color: white;
+}	
+
+.card4 .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.card4 .percent2 .number h2 span
+{
+	color: white;
+}
+	
+.card4 .text
+{
+	color: white;
+}	
+
+.content3 p
+{
+	font-size: 1em;
+}
+
+.container6
+{
+    width: 300px;
+    align-items: left;
+}
+}
+
+@media screen and (max-width: 768)
+{
+    .container5{
+		display: block;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	header
+	{
+		padding: 20px 50px;
+	}
+	
+	.menu
+	{
+		position: fixed;
+        top: 75px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: white;
+		transition: 0.5s;
+		border-top: 1px solid black;
+	}
+	
+	.menu.active
+	{
+		left: 0;
+	}
+	
+	header ul li a
+	{
+		color: #111;
+		font-size:30px;
+		margin: 10px;
+	}
+	
+	.toggle
+	{
+		width: 40px;
+		height: 40px;
+		background: url(menu.png) ;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	
+	.toggle.active
+	{
+		background: url(close.png) ;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	
+	.section
+	{
+		padding: 100px 50px;
+	}
+	
+	.banner
+	{
+		padding: 150px 50px 100px;
+	}
+	
+	.banner h2
+	{
+		font-size: 2em;
+	}
+	
+	.banner h3
+	{
+		font-size: 1.5em;
+	}
+	
+	.about .content .contentBx p
+	{
+		
+		left: 20px;
+	}
+	
+	.btnGit
+	{
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+	
+	.btnHost
+	{
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+	
+	.content
+	{
+		flex-direction: column;
+	}
+	
+	.w50
+	{
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.container .card .content1 h3,
+    .container .card .content1 p
+{
+	opacity: 1;
+}
+
+.container .card .content1 h2
+{
+	opacity: 1;
+	transform: translateY(-70px);
+}
+
+.container .card span
+{
+	opacity: 1;
+}
+
+.card2 .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.card2 .percent2 .number h2 span
+{
+	color: white;
+}
+	
+.card2 .text
+{
+	color: white;
+}	
+
+.card3 .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.card3 .percent2 .number h2 span
+{
+	color: white;
+}
+	
+.card3 .text
+{
+	color: white;
+}	
+
+.card4 .percent2 .number h2
+{
+	color: white;
+	font-size: 48px;
+}
+
+.card4 .percent2 .number h2 span
+{
+	color: white;
+}
+	
+.card4 .text
+{
+	color: white;
+}	
+
+.content3 p
+{
+	font-size: 1em;
+}
+
+.container6
+{
+    width: 300px;
+    align-items: left;
+}
+    
+
+}
+
+.button
+{
+	position: relative;
+	background: #0C090A;
+	display: inline-block;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border-radius: 100%;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+.button:hover
+{
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+	background-color: #3b5999;
+}
+
+.last
+{
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 65vh;
+    background-image:linear-gradient( black, white, grey);
+	width: 500px;
+  }
+  
+  header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+  }
+  
+  header1 input {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid Red;
+	border-top: 3px solid Red;
+    color: Black;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+  }
+  
+  header1 input:focus {
+    background-color: white;
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location .city {
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .location .date {
+    color: black;
+    font-size: 24px;
+  }
+  
+  .current .temp {
+    color: black;
+    font-size: 80px;
+    font-weight: 900;
+    margin: 30px 0px;
+  }
+  
+  .current .temp span {
+    font-weight: 500;
+  }
+  
+  .current .weather {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .current .hi-low {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+ .container6 p {
+      color: grey;
+      font-size: 0.7rem;
+  }
+  
+  .container6 {
+      width: 500px;
+      background-color: white;
+      left: 500px;
+ 
+  }
+  
+  video {
+      position: relative;
+      left: 300px;
+      width: 10px;
+      background-color: #fff;
+  }
+  
+
+  
+  main2 {
+      padding: 370px 18px 10px;
+  }
+  
+  article {
+      display: flex;
+      align-items: left;
+      padding: 8px 12px;
+      border: 2px solid white;
+      border-radius: 8px;
+      margin: 0 auto;
+  }
+  
+  article:hover {
+          border: 2px solid red;
+      }
+  
+  .thumb {
+      height: 70px;
+      border-radius: 4px;
+  }
+  
+  .details {
+      padding: 8px 22px;
+  }
+  
+.pet p
+{
+    font-size:14px;
+}
